@@ -48,7 +48,7 @@ Host:
 
 ## Configuration options
 
-The integration provides the following configuration options. By entering your HEOS Account login information, the integration will be able to access streaming services, playlists, favorites, and other features. The integration will validate and sign-in to your HEOS Account when credentials are entered or updated and will ensure the HEOS System remains logged in while the credentials remain valid. Clearing the credentials will sign the HEOS System out of your account.
+The integration provides the following configuration options. By entering your HEOS Account login information, the integration will be able to access streaming services, playlists, favorites, and other features. The integration will validate and sign in to your HEOS Account when credentials are entered or updated, and will ensure the HEOS System remains logged in while the credentials remain valid. Clearing the credentials will sign the HEOS System out of your account.
 
 1. Go to **{% my integrations icon title="Settings > Devices & Services" %}**.
 2. Select **Denon HEOS**. Click **CONFIGURE**.
@@ -275,11 +275,11 @@ for `favorite` and `playlist` will fail. Other functionality of the integration 
 
 ##### Description
 
-In order to access features, such as favorites, playlists, and streaming services, the HEOS System must be logged in to your HEOS Account. This occurs when credentials are not entered in the configuration options and the HEOS System is in a logged out state.
+To access features, such as favorites, playlists, and streaming services, the HEOS System must be logged in to your HEOS Account. This occurs when credentials are not entered in the configuration options and the HEOS System is in a logged out state.
 
 ##### Resolution
 
-Enter the credentials to your HEOS Account in the [configuration options](/integrations/heos#configuration-options) if you to access playlists, favorites, and streaming services, otherwise the logged warning can be ignored. If credentials are entered, the integration will ensure that the HEOS System remains logged in while the credentials remain valid.
+Enter the credentials to your HEOS Account in the [configuration options](/integrations/heos#configuration-options) if you want to access playlists, favorites, and streaming services; otherwise the logged warning can be ignored. If credentials are entered, the integration will ensure that the HEOS System remains logged in while the credentials remain valid.
 
 ### Error attempting to submit configuration options
 
@@ -287,7 +287,7 @@ Enter the credentials to your HEOS Account in the [configuration options](/integ
 
 ##### Description
 
-The integration was not able to log the HEOS System in using the credentials provided. An informational log message contains the specific reason, such as: `User not found (10)` or `Invalid credentials (6)`.
+The integration was unable to log the HEOS System in using the credentials provided. An informational log message contains the specific reason, such as: `User not found (10)` or `Invalid credentials (6)`.
 
 ##### Resolution
 
@@ -297,7 +297,7 @@ Validate your credentials by logging in to the HEOS Mobile App and then re-enter
 
 ##### Description
 
-An unexpected error occurred signing in or logging out of your HEOS Account. A error-level log message contains the error information.
+An unexpected error occurred signing in or logging out of your HEOS Account. An error-level log message contains the error information.
 
 ##### Resolution
 
